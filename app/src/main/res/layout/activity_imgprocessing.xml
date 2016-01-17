@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="xyz.davidng.photoeffector.MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnNone"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="None" />
+            <Button
+                android:id="@+id/btnShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Shadow" />
+            <Button
+                android:id="@+id/btnBrightness"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Brightness" />
+
+            <Button
+                android:id="@+id/btnInvert"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Invert" />
+
+            <Button
+                android:id="@+id/btnGray"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Black N white" />
+
+            <Button
+                android:id="@+id/btnRed"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Red" />
+
+            <Button
+                android:id="@+id/btnGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Green" />
+
+            <Button
+                android:id="@+id/btnBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Blue" />
+            <Button
+                android:id="@+id/btnContrast"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Contrast" />
+            <Button
+                android:id="@+id/btnRound"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Round Corner" />
+            <Button
+                android:id="@+id/btnFlip"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Flip" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:id="@+id/scv"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageviewMain"
+                android:layout_below="@id/scrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/saigon"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnSaveSD"
+                    android:text="Save to SD"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="#009933"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp" />
+                <Button
+                    android:id="@+id/btnShareFB"
+                    android:text="Share FB"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="#3388bb"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="75dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
