@@ -1,7 +1,5 @@
 # photo-effector
 
-<a href="https://davidng94.wordpress.com/2016/01/17/photo-effector-demo-src/">Article</a> 
-<br>
 Demo:
 <br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=0tz27gWMrTY
